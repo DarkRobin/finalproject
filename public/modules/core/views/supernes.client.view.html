@@ -1,0 +1,29 @@
+<section data-ng-controller="SupernesController" class="signincenter">
+	This is the Supernes view
+	<table class="table table-hover">
+		<thead>
+			<tr>
+				<td class="hidden">Cover Art</td>
+				<td><strong>Title</strong></td>
+				<td><strong>Console</strong></td>
+				<td><strong>Genere</strong></td>
+				<td></td>
+				<td class="hidden">Game ID</td>
+				<td class="hidden">Loose Price</td>
+				<td class="hidden">CIB Price</td>
+			</tr>
+		</thead>
+		<tbody ng-repeat="game in gamedb | filter:{FIELD2:'Super Nintendo'}: true">
+			<tr>
+				<td class="hidden">Cover Art</td>
+				<td>{{game.FIELD3}}</td>
+				<td>{{game.FIELD2}}</td>
+				<td>{{game.FIELD6}}</td>
+				<td>[ ] add</td>
+				<td class="hidden">{{game.FIELD1}}</td>
+				<td class="hidden">{{game.FIELD4}}</td>
+				<td class="hidden">{{game.FIELD5}}</td>
+			</tr>
+		</tbody>
+	</table>
+</section>

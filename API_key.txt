@@ -1,0 +1,24 @@
+//API key
+f7a9d55165f457ab1c4cc1a26ec41c91231f8af7
+
+from giantbomb.com
+
+a88a5dbb967f29b010e36c761eb08a8d93d8e5c4
+
+
+nes
+<![CDATA[ http://www.giantbomb.com/api/platform/3045-21/ ]]>
+
+
+
+
+
+http://www.giantbomb.com/api/platforms/?api_key=a88a5dbb967f29b010e36c761eb08a8d93d8e5c4&filter=name:Genesis
+
+
+nes id = 90
+
+
+//VG price charts
+ebeb6dae2576d5054dd8ac695aea219c62c86914
+https://ae.pricecharting.com/price-guide/download-custom?t=ebeb6dae2576d5054dd8ac695aea219c62c86914

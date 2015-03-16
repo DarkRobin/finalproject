@@ -1,0 +1,109 @@
+.logo{
+	font-family: 'Press Start 2P', cursive;
+	color: white;
+	font-size: 50px;
+}
+.content {
+	margin-top: 50px;
+}
+.undecorated-link:hover {
+	text-decoration: none;
+}
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+	display: none !important;
+}
+.ng-invalid.ng-dirty {
+	border-color: #FA787E;
+}
+.ng-valid.ng-dirty {
+	border-color: #78FA89;
+}
+.unblur{
+	z-index: 9999;
+}
+body{
+	/*background-image: url("https://s-media-cache-ak0.pinimg.com/originals/a1/3e/3e/a13e3e25bf296f392a84148b52b2344b.jpg"); */
+	background-image: url("http://bigbackground.com/wp-content/uploads/2013/07/classic-video-game-wallpapers.jpg");
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+	
+}
+body{
+	background-image: url("http://fc01.deviantart.net/fs70/i/2014/320/1/5/nes_box_art_desktop_background_16_9_by_noisypanther-d86mgh1.jpg");
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+	
+}
+.widein{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.topmargin{
+	margin-top: 91px;
+}
+.navbar-inverse .navbar-brand{
+	color: #FFFFFF;
+}
+.8bitsignin{
+	font-family: 'Press Start 2P', cursive;
+	color: orange;
+}
+.navbar-inverse{
+	background-image: linear-gradient(to bottom, #3c3c3c 0%, #57AB9E 100%);
+}
+.introcontent{
+	max-width: 400px;
+	background-color: #FFFFFF;
+	padding: 40px;
+	margin-top: 80px;
+	margin-left: auto;
+	margin-right: auto;
+	border-width: 10px;
+	border-style: ridge;
+	border-color: grey;
+
+
+}
+.centerbtn{
+	
+	list-style: none;
+}
+.clearleftpad{
+	padding-left: 0px;
+}
+.name{
+	font-family: 'Press Start 2P', cursive;
+	font-size: 28px;
+}
+.colorwht{
+	color: #FFFFFF;
+}
+.navbar-inverse .navbar-nav > li > a{
+	color: #FFFFFF;
+}
+.signincenter{
+	background-color: #FFFFFF;
+ 	max-width: 700px;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	margin-top: 80px;
+ 	border-width: 10px;
+	border-style: ridge;
+	border-color: grey;
+}
+.whiteimg{
+	background-color: #FFFFFF;
+}
+.white{
+	color: #FFFFFF;
+}
+.widewidth{
+	width: 100%;
+}
+/*font-family: 'Press Start 2P', cursive;*/
