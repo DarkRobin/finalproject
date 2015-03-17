@@ -59,8 +59,9 @@
     "mocha": "^2.2.1"
   },
   "scripts": {
-    "test": "mocha",
-    "start": "node server.js"
+    "start": "grunt",
+    "test": "grunt test",
+    "postinstall": "bower install --config.interactive=false"
   },
   "repository": {
     "type": "git",
