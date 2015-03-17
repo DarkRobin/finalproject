@@ -3,7 +3,18 @@
 // Addtodatabases controller
 angular.module('addtodatabases').controller('AddtodatabasesController', ['$scope', '$stateParams', '$location', 'Authentication', 'Addtodatabases',
 	function($scope, $stateParams, $location, Authentication, Addtodatabases) {
-	
+
+		$scope.searchGame   = '';
+
+		$scope.exceptEmptyComparator = function(actual, expected){
+			if (!expected){
+				return true;
+			}
+			return angular.equals(expected,actual);
+		};
+
+		
+
 		$scope.authentication = Authentication;
 
 		// Create new Addtodatabase

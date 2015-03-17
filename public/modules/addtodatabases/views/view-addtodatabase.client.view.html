@@ -3,6 +3,15 @@
 	<div class="page-header">
         <h1>My Library</h1>
     </div>
+    
+        <form>
+    <div class="form-group">
+      <div class="input-group">
+        <div class="input-group-addon"><i class="fa fa-search"></i></div>
+        <input type="text" class="form-control" placeholder="Search da games" ng-model="searchGame">
+      </div>      
+    </div>
+  </form>
 <div>
     <table class="table table-hover">
         <thead>
@@ -11,12 +20,44 @@
                 <td>
                     <strong>
                         Console
-                        <select>
-                        <option value="All">All</option>
-                          <option value="NES" ng-model="nesFilter">NES</option>
-                          <option value="Saturn">Saturn</option>
-                          <option value="Playstation 2">Playstation 2</option>
-                          <option value="XBOX">XBOX</option>
+                        <select ng-model="platformFilter">
+                            <option value="">All</option>
+                                <optgroup label="Nintendo">
+                                    <option value="NES">NES</option>
+                                    <option value="Super Nintendo">Super Nintendo</option>
+                                    <option value="Nintendo 64">Nintendo 64</option>
+                                    <option value="Gamecube">Gamecube</option>
+                                    <option value="Wii">Wii</option>
+                                    <option value="Wii U">Wii U</option>
+                                    <option value="Virtual Boy">Virtual Boy</option>
+                                    <option value="GameBoy">GameBoy</option>
+                                    <option value="GameBoy Color">GameBoy Color</option>
+                                    <option value="GameBoy Advance">GameBoy Advance</option>
+                                    <option value="Nintendo DS">Nintendo DS</option>
+                                    <option value="Nintendo 3DS">Nintendo 3DS</option>
+                                </optgroup>
+                                <optgroup label="Sega">
+                                    <option value="Sega Master System">Master System</option>
+                                    <option value="Sega Genesis">Sega Genesis</option>
+                                    <option value="Sega CD">Sega CD</option>
+                                    <option value="Sega 32X">Sega 32X</option>
+                                    <option value="Sega Saturn">Sega Saturn</option>
+                                    <option value="Sega Dreamcast">Dreamcast</option>
+                                    <option value="Sega Game Gear">Game Gear</option>
+                                </optgroup>
+                                <optgroup label="Sony">
+                                    <option value="Playstation">Playstation</option>
+                                    <option value="Playstation 2">Playstation 2</option>
+                                    <option value="Playstation 3">Playstation 3</option>
+                                    <option value="Playstation 4">Playstation 4</option>
+                                    <option value="PSP">PSP</option>
+                                    <option value="PlayStation Vita">PlayStation Vita</option>
+                                </optgroup>
+                                <optgroup label="Microsoft">
+                                    <option value="Xbox">Xbox</option>
+                                    <option value="Xbox 360">Xbox 360</option>
+                                    <option value="Xbox One">Xbox One</option>
+                                </optgroup>
                         </select>
                     </strong>
                 </td>
@@ -25,7 +66,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr data-ng-repeat="game in addtodatabases | filter: authentication.user._id | filter: nesfilter ">
+            <tr data-ng-repeat="game in addtodatabases | filter: authentication.user._id | filter: searchGame | filter: platformFilter: exceptEmptyComparator ">
                 <td>{{game.FIELD3}}</td>
                 <td>{{game.FIELD2}}</td>
                 <td>{{game.FIELD6}}</td>
