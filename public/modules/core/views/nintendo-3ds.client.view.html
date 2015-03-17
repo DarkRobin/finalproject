@@ -1,5 +1,13 @@
 <section data-ng-controller="Nintendo3dsController" class="signincenter">
 	This is the Nintendo 3ds view
+	<form>
+    <div class="form-group">
+      <div class="input-group">
+        <div class="input-group-addon"><i class="fa fa-search"></i></div>
+        <input type="text" class="form-control" placeholder="Search da games" ng-model="searchGame">
+      </div>      
+    </div>
+  </form>
 	<table class="table table-hover">
 		<thead>
 			<tr>
@@ -13,16 +21,16 @@
 				<td class="hidden">CIB Price</td>
 			</tr>
 		</thead>
-		<tbody ng-repeat="game in gamedb | filter:{FIELD2:'Nintendo 3DS'}: true">
+		<tbody ng-repeat="game in gamedb | filter:{FIELD2:'Nintendo 3DS'}: true | filter: searchGame">
 			<tr>
 				<td class="hidden">Cover Art</td>
 				<td>{{game.FIELD3}}</td>
 				<td>{{game.FIELD2}}</td>
 				<td>{{game.FIELD6}}</td>
-				<td>[ ] add</td>
+				<td><button ng-click="addToLibrary(game.FIELD1)" add-to-library current-game="game">Add</button></td>
 				<td class="hidden">{{game.FIELD1}}</td>
-				<td class="hidden">{{game.FIELD4}}</td>
-				<td class="hidden">{{game.FIELD5}}</td>
+				<td class="">{{game.FIELD4 | currency}}</td>
+				<td class="hidden">{{game.FIELD5 | currency}}</td>
 			</tr>
 		</tbody>
 	</table>

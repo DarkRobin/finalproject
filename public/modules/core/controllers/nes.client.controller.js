@@ -1,7 +1,7 @@
 'use strict';
 
-angular.module('core',['addtodatabases'])
-.directive("addToLibrary", ['Addtodatabases', function($location, Addtodatabases) {
+angular.module('core')
+.directive("addToLibrary", ['$location','Addtodatabases', function($location, Addtodatabases) {
 	return {
 		restrict: "A",
 		scope: {
@@ -40,12 +40,14 @@ angular.module('core',['addtodatabases'])
 }])
 .controller('NesController', ['$scope', '$http',
 	function($scope, $http) {
+    $scope.searchGame   = '';     // set the default search/filter term
 	
 		$http.get('/modules/core/gamedb/gamedb.json').success(function(data){
 			$scope.gamedb = data;
 		});
 
     $scope.orderProp = 'age';
+
 
     
 	// $scope.gamedb = [

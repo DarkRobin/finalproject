@@ -15,7 +15,7 @@ angular.module('addtodatabases').config(['$stateProvider',
 		}).
 		//Chaneged route to my library
 		state('viewAddtodatabase', {
-			url: '/addtodatabases/view',
+			url: '/mylibrary',
 			templateUrl: 'modules/addtodatabases/views/view-addtodatabase.client.view.html'
 		}).
 		state('editAddtodatabase', {

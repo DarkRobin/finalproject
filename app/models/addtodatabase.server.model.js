@@ -20,10 +20,10 @@ var AddtodatabaseSchema = new Schema({
 		type: String
 	},
 	FIELD4: {
-		type: String
+		type: Number
 	},
 	FIELD5: {
-		type: String
+		type: Number
 	},
 	FIELD6: {
 		type: String

@@ -3,6 +3,7 @@
 // Addtodatabases controller
 angular.module('addtodatabases').controller('AddtodatabasesController', ['$scope', '$stateParams', '$location', 'Authentication', 'Addtodatabases',
 	function($scope, $stateParams, $location, Authentication, Addtodatabases) {
+	
 		$scope.authentication = Authentication;
 
 		// Create new Addtodatabase
