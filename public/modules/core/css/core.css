@@ -8,6 +8,10 @@
 .stylenone{
 	list-style: none;
 }
+.datainfo{
+	text-align: center;
+	font-size: 30px;
+}
 .row{
 	margin-bottom: 8%;
 }
@@ -30,7 +34,8 @@
 .logo{
 	font-family: 'Press Start 2P', cursive;
 	color: white;
-	font-size: 50px;
+	font-size: 40px;
+	margin-right: 70px;
 }
 .logocenter{
 	font-family: 'Press Start 2P', cursive;
@@ -55,9 +60,9 @@
 .unblur{
 	z-index: 9999;
 }
-body{
-	/*background-image: url("https://s-media-cache-ak0.pinimg.com/originals/a1/3e/3e/a13e3e25bf296f392a84148b52b2344b.jpg"); */
-	background-image: url("http://bigbackground.com/wp-content/uploads/2013/07/classic-video-game-wallpapers.jpg");
+
+.backimg{
+	background-image: url("http://fc01.deviantart.net/fs70/i/2014/320/1/5/nes_box_art_desktop_background_16_9_by_noisypanther-d86mgh1.jpg");
 	width: 100%;
 	height: 100%;
 	background-repeat: no-repeat;
@@ -65,8 +70,8 @@ body{
 	background-attachment: fixed;
 	
 }
-body{
-	background-image: url("http://fc01.deviantart.net/fs70/i/2014/320/1/5/nes_box_art_desktop_background_16_9_by_noisypanther-d86mgh1.jpg");
+.snesimg{
+	background-image: url("http://thecredhulk.com/wp-content/uploads/2014/03/supernintendo.jpg");
 	width: 100%;
 	height: 100%;
 	background-repeat: no-repeat;
@@ -148,5 +153,20 @@ body{
 }
 .widewidth{
 	width: 100%;
+}
+.page-header{
+	border-bottom: none;
+}
+.numbercontent{
+	font-size: 45px;
+	color: 
+}
+.margbottom{
+	margin-bottom: none;
+}
+.sonicimg{
+	background-image: url('http://fc04.deviantart.net/fs71/i/2013/064/3/d/sonic_vector_by_snicketbar-d5x3yj2.png');
+	background-repeat: no-repeat;
+	background-size: 20%;
 }
 /*font-family: 'Press Start 2P', cursive;*/
