@@ -6,6 +6,7 @@ angular.module('addtodatabases').controller('AddtodatabasesController', ['$scope
 
 		$scope.searchGame   = '';
 
+
 		$scope.exceptEmptyComparator = function(actual, expected){
 			if (!expected){
 				return true;
@@ -54,7 +55,7 @@ angular.module('addtodatabases').controller('AddtodatabasesController', ['$scope
 
 		$scope.totalGames = function() {
 			return $scope.games ? $scope.games.length : 0;
-		}
+		};
 
 		$scope.libraryValue = function() {
 			var sum = 0;
@@ -68,7 +69,7 @@ angular.module('addtodatabases').controller('AddtodatabasesController', ['$scope
 			}
 
 			return sum;
-		}
+		};
 
 		// Update existing Addtodatabase
 		$scope.update = function() {
