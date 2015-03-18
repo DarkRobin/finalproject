@@ -52,6 +52,24 @@ angular.module('addtodatabases').controller('AddtodatabasesController', ['$scope
 			}
 		};
 
+		$scope.totalGames = function() {
+			return $scope.games ? $scope.games.length : 0;
+		}
+
+		$scope.libraryValue = function() {
+			var sum = 0;
+
+			if($scope.games) {
+				var len = $scope.totalGames();
+				for(var i =0; i < len; i++) {
+					var game = $scope.games[i];
+					sum += game.FIELD4;
+				}
+			}
+
+			return sum;
+		}
+
 		// Update existing Addtodatabase
 		$scope.update = function() {
 			var addtodatabase = $scope.addtodatabase;
