@@ -12,3 +12,6 @@
 	right: 10px;
 	position: absolute;
 }
+.form-horizontal .form-group{
+	margin: none;
+}

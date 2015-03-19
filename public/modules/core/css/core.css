@@ -5,6 +5,13 @@
 .librarycontent{
 	width: 49%;
 }
+.money{
+	width: 20%;
+}
+/*.form-horizontal .form-group{
+	margin: 0px;
+	padding: 10px;
+}*/
 .stylenone{
 	list-style: none;
 }

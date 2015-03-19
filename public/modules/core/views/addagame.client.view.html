@@ -1,29 +1,60 @@
 <section data-ng-controller="AddagameController" class='signincenter'>
-	<p>add a game</p>
-	<form>
+	<p class="logocenter">Add a game</p>
+	<form class="form-inline">
 		<input type="text" placeholder="Game Title">
 		<select>
-			<option value="NES">NES</option>
-			<option value="Super Nintendo">Super Nintendo</option>
-			<option value="Nintendo 64">Nintendo 64</option>
-			<option value="Gamecube">Gamecube</option>
-			<option value="Wii">Wii</option>
-			<option value="Wii U">Wii U</option>
+			<optgroup label="Nintendo">
+                <option value="NES">NES</option>
+                <option value="Super Nintendo">Super Nintendo</option>
+                <option value="Nintendo 64">Nintendo 64</option>
+                <option value="Gamecube">Gamecube</option>
+                <option value="Wii">Wii</option>
+                <option value="Wii U">Wii U</option>
+                <option value="Virtual Boy">Virtual Boy</option>
+                <option value="GameBoy">GameBoy</option>
+                <option value="GameBoy Color">GameBoy Color</option>
+                <option value="GameBoy Advance">GameBoy Advance</option>
+                <option value="Nintendo DS">Nintendo DS</option>
+                <option value="Nintendo 3DS">Nintendo 3DS</option>
+            </optgroup>
+            <optgroup label="Sega">
+                <option value="Sega Master System">Master System</option>
+                <option value="Sega Genesis">Sega Genesis</option>
+                <option value="Sega CD">Sega CD</option>
+                <option value="Sega 32X">Sega 32X</option>
+                <option value="Sega Saturn">Sega Saturn</option>
+                <option value="Sega Dreamcast">Dreamcast</option>
+                <option value="Sega Game Gear">Game Gear</option>
+            </optgroup>
+            <optgroup label="Sony">
+                <option value="Playstation">Playstation</option>
+                <option value="Playstation 2">Playstation 2</option>
+                <option value="Playstation 3">Playstation 3</option>
+                <option value="Playstation 4">Playstation 4</option>
+                <option value="PSP">PSP</option>
+                <option value="PlayStation Vita">PlayStation Vita</option>
+            </optgroup>
+            <optgroup label="Microsoft">
+                <option value="Xbox">Xbox</option>
+                <option value="Xbox 360">Xbox 360</option>
+                <option value="Xbox One">Xbox One</option>
+            </optgroup>
 		</select>
 		<select>
 			<option value="Action & Adventure ">Action & Adventure</option>
-			<option value="Super Nintendo">Super Nintendo</option>
-			<option value="Nintendo 64">Nintendo 64</option>
-			<option value="Gamecube">Gamecube</option>
-			<option value="Wii">Wii</option>
-			<option value="Wii U">Wii U</option>
+			<option value="Super Nintendo">RPG</option>
+			<option value="Nintendo 64">Sports</option>
+			<option value="Gamecube">FPS</option>
+			<option value="Wii">Racing</option>
+			<option value="Wii U">Other</option>
 		</select>
-		<div class="input-group">
+		<div class="input-group money">
 		  <span class="input-group-addon">$</span>
 		  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
 		  <span class="input-group-addon">.00</span>
 		</div>
-		<button ng-click="addToLibraryForm()" add-to-library current-game="game">Add</button>
+		<button class="btn-primary" ng-click="addToLibraryForm()" add-to-library current-game="game">Add</button>
 		
 	</form>
+	<img class="maxlengthsquare" src="http://fc01.deviantart.net/fs17/i/2007/160/7/d/The_Evolution_of_Sonic_by_spaz16.png">
 </section>
