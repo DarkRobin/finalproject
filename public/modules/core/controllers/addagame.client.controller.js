@@ -17,11 +17,11 @@ angular.module('core')
 				// Create new Addtodatabase object
 				console.log(Addtodatabases);
 				var addtodatabase = new Addtodatabases ({
-					FIELD1: data.FIELD1,
+					
 					FIELD2: data.FIELD2,
 					FIELD3: data.FIELD3,
 					FIELD4: data.FIELD4,
-					FIELD5: data.FIELD5,
+					
 					FIELD6: data.FIELD6
 				});
 
@@ -41,7 +41,8 @@ angular.module('core')
 
 .controller('AddagameController', ['$scope',
 	function($scope) {
-		// Controller Logic
-		// ...
+	
+
+		$scope.orderProp = 'age';
 	}
 ]);

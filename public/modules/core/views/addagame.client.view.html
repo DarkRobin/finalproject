@@ -1,8 +1,9 @@
 <section data-ng-controller="AddagameController" class='signincenter'>
 	<p class="logocenter">Add a game</p>
 	<form class="form-inline">
-		<input type="text" placeholder="Game Title">
-		<select>
+		<input type="text" placeholder="Game Title" ng-model="game.FIELD3">
+		<select ng-model="game.FIELD2">
+            <option value="" default selected>Console</option>
 			<optgroup label="Nintendo">
                 <option value="NES">NES</option>
                 <option value="Super Nintendo">Super Nintendo</option>
@@ -40,7 +41,8 @@
                 <option value="Xbox One">Xbox One</option>
             </optgroup>
 		</select>
-		<select>
+		<select ng-model="game.FIELD6">
+            <option value="" default selected>Genre</option>
 			<option value="Action & Adventure ">Action & Adventure</option>
 			<option value="Super Nintendo">RPG</option>
 			<option value="Nintendo 64">Sports</option>
@@ -50,10 +52,10 @@
 		</select>
 		<div class="input-group money">
 		  <span class="input-group-addon">$</span>
-		  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+		  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" ng-model="game.FIELD4">
 		  <span class="input-group-addon">.00</span>
 		</div>
-		<button class="btn-primary" ng-click="addToLibraryForm()" add-to-library current-game="game">Add</button>
+		<button class="btn-primary" ng-click="addToLibraryForm(game)" add-to-library current-game="game">Add</button>
 		
 	</form>
 	<img class="maxlengthsquare" src="http://fc01.deviantart.net/fs17/i/2007/160/7/d/The_Evolution_of_Sonic_by_spaz16.png">
