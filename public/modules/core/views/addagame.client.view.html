@@ -42,13 +42,20 @@
             </optgroup>
 		</select>
 		<select ng-model="game.FIELD6">
-            <option value="" default selected>Genre</option>
-			<option value="Action & Adventure ">Action & Adventure</option>
-			<option value="Super Nintendo">RPG</option>
-			<option value="Nintendo 64">Sports</option>
-			<option value="Gamecube">FPS</option>
-			<option value="Wii">Racing</option>
-			<option value="Wii U">Other</option>
+            <option value="" default selected>Genre / Hardware</option>
+            <optgroup label="Hardware">
+                <option value="System">System</option>
+                <option value="Controller">Controller</option>
+                <option value="Accessory">Accessory</option>
+            </optgroup>
+            <optgroup label="Genre">
+    			<option value="Action & Adventure ">Action & Adventure</option>
+    			<option value="RPG">RPG</option>
+    			<option value="Sports">Sports</option>
+    			<option value="FPS">FPS</option>
+    			<option value="Racing">Racing</option>
+    			<option value="Other">Other</option>
+            </optgroup>
 		</select>
 		<div class="input-group money">
 		  <span class="input-group-addon">$</span>

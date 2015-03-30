@@ -17,11 +17,9 @@ angular.module('core')
 				// Create new Addtodatabase object
 				console.log(Addtodatabases);
 				var addtodatabase = new Addtodatabases ({
-					
 					FIELD2: data.FIELD2,
 					FIELD3: data.FIELD3,
 					FIELD4: data.FIELD4,
-					
 					FIELD6: data.FIELD6
 				});
 
